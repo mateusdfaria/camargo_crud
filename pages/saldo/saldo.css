@@ -1,0 +1,58 @@
+body {
+    background-color: #ffd700; /* Cor de fundo suave */
+    font-family: Arial, sans-serif; /* Fonte padrão */
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 20px;
+}
+
+.clear {
+    background: none;
+    border: none;
+    color: #ccc; /* Cor do botão */
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.clear:hover {
+    color: #007f5f; /* Cor ao passar o mouse */
+}
+
+.centralize {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.container {
+    background-color: #fff; /* Fundo branco para o container */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
+    width: 300px; /* Largura fixa para o formulário */
+}
+
+h2 {
+    color: #333; /* Cor do texto */
+    margin-bottom: 20px;
+}
+
+#saldo-container {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
+}
+
+#saldo-container h3 {
+    margin: 0;
+}

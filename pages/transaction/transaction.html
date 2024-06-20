@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transação - Sistema de Banco Online</title>
+    <link rel="stylesheet" href="transaction.css">
+</head>
+<body>
+    <header class="header">
+        <button type="button" class="clear" onclick="voltarParaHome()">
+            Voltar
+        </button>
+    </header>
+    <main class="centralize">
+        <form id="transaction-form" class="form-container">
+            <div class="form-field">
+                <div><label>Transação</label></div>
+                <input type="radio" name="type" value="Despesa" checked id="expense">
+                <label for="expense">Despesa</label>
+                <input type="radio" name="type" value="Receita" id="income">
+                <label for="income">Receita</label>
+            </div>
+            <div class="form-field">
+                <div><label>Data da transação</label></div>
+                <input type="date" id="data">
+            </div>
+            <div class="form-field">
+                <div><label>Moeda</label></div>
+                <select id="moeda">
+                    <option>Dólar</option>
+                    <option>Euro</option>
+                    <option selected>Real</option>
+                </select>
+            </div>
+            <div class="form-field">
+                <div><label>Valor</label></div>
+                <input type="number" id="valor">
+            </div>
+            <div class="form-field">
+                <div><label>Tipo de transação</label></div>
+                <select id="tipoTransacao">
+                    <option>-- Selecione um tipo de transação --</option>
+                    <option>Acomodação</option>
+                    <option>Alimentação</option>
+                    <option>Outros</option>
+                    <option>Salário</option>
+                    <option>Supermercado</option>
+                    <option>Transporte</option>
+                </select>
+            </div>
+            <div class="form-field">
+                <div><label>Descrição</label></div>
+                <input type="text" id="descricao">
+            </div>
+            <button id="salvar-transacao" type="button">Salvar Transação</button>
+            <button type="button" class="clear" onclick="voltarParaHome()">Cancelar</button>
+        </form>
+        <div id="message"></div> <!-- Elemento para mensagens -->
+    </main>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+    <script src="../../firebase-init.js"></script>
+    <script src="../../loading.js"></script>
+    <script src="transaction.js"></script>
+</body>
+</html>

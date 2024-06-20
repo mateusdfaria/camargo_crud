@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Home - Sistema de Banco Online</title>
+</head>
+
+<body>
+    <header>
+        <button type="button" class="clear2" onclick="logout()">
+            Sair
+        </button>
+        <div class="dashboard-container">
+            <h2 class="title">Bem-vindo ao Sistema de Banco Online</h2>
+            <div class="options">
+                <a href="../saldo/saldo.html" class="button">Saldo</a>
+                <a href="../extrato/Extrato.html" class="button">Extrato</a>
+                <a href="../transaction/transaction.html" class="button">Transação</a>
+                <a href="../pagamentos/pagamentos.html" class="button">Pagamentos</a>
+                <a href="../deposito/deposito.html" class="button">Depositar</a>
+                <a href="../contas/contas.html" class="button">Contas</a>
+            </div>
+        </div>
+    </header>
+</body>
+
+<link rel="stylesheet" href="../../global.css">
+<link rel="stylesheet" href="home.css">
+
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+<script src="../../firebase-init.js"></script>
+<script src="home.js"></script>
+
+
+</html>

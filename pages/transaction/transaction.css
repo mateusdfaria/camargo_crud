@@ -1,0 +1,107 @@
+body {
+    background-color: #ffd700; /* Cor de fundo suave */
+    font-family: Arial, sans-serif; /* Fonte padrão */
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 20px;
+}
+
+.clear {
+    background: none;
+    border: none;
+    color: #009879; /* Cor do botão */
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.clear:hover {
+    color: #007f5f; /* Cor ao passar o mouse */
+}
+
+.centralize {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.form-container {
+    background-color: #fff; /* Fundo branco para o container */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
+    width: 300px; /* Largura fixa para o formulário */
+}
+
+h2 {
+    color: #333; /* Cor do texto */
+    margin-bottom: 20px;
+}
+
+.form-field {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type="button"] {
+    background-color: #009879;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+button[type="button"].clear {
+    background-color: #f44336;
+}
+
+button[type="button"]:hover {
+    background-color: #007f5f;
+}
+
+button[type="button"].clear:hover {
+    background-color: #e31e10;
+}
+
+#message {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#message.success {
+    color: #4CAF50; /* Verde para sucesso */
+    background-color: #DFF2BF;
+}
+
+#message.error {
+    color: #D8000C; /* Vermelho para erro */
+    background-color: #FFBABA;
+}

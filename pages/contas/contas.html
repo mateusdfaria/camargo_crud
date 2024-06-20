@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Contas - Sistema de Banco Online</title>
+    <link rel="stylesheet" href="contas.css">
+</head>
+<body>
+    <header>
+        <button type="button" class="clear" onclick="voltarParaHome()">
+            Voltar
+        </button>
+    </header>
+    <main class="centralize">
+        <h1>Cadastro de Contas</h1>
+        <form id="conta-form">
+            <div class="form-field">
+                <div><label>Nome</label></div>
+                <input type="text" id="nome" required>
+            </div>
+            <div class="form-field">
+                <div><label>Saldo Inicial</label></div>
+                <input type="number" step="0.01" id="saldo" required>
+            </div>
+            <button type="submit" class="solid">Salvar</button>
+        </form>
+        <h2>Contas Cadastradas</h2>
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Saldo</th>
+                </tr>
+            </thead>
+            <tbody id="contas-table-body">
+                <!-- Contas serão inseridas aqui -->
+            </tbody>
+        </table>
+    </main>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore-compat.js"></script>
+    <script src="../../firebase-init.js"></script>
+    <script src="contas.js"></script>
+</body>
+</html>

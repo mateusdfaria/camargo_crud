@@ -1,0 +1,52 @@
+body {
+    height: 100vh;
+}
+.title {
+    text-align: center;
+    font-size: 40px;
+}
+header {
+    text-align: right;
+}
+header button {
+    width: auto;
+}
+
+.clear2 {
+    background: transparent;
+    border: none;
+    color: rgb(8, 6, 6);
+    font-size: 15px;
+}
+/* Estilos para o container das opções */
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 600px; /* Defina um valor máximo para o container para manter o layout responsivo */
+    margin: 0 auto; /* Centraliza o container na tela */
+}
+
+/* Estilos para os botões */
+.button {
+    display: inline-block;
+    width: 200px; /* Define um tamanho fixo para os botões */
+    height: 100px; /* Define uma altura fixa para os botões */
+    margin: 20px; /* Ajusta a margem entre os botões */
+    background-color: #007bff; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    text-decoration: none;
+    border: none;
+    border-radius: 8px; /* Aumenta o raio da borda para suavizar as bordas */
+    cursor: pointer;
+    font-size: 20px; /* Aumenta o tamanho da fonte */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button:hover {
+    background-color: #0056b3; /* Mudança de cor ao passar o mouse */
+}
+
+

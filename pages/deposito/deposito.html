@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depósito - Sistema de Banco Online</title>
+    <link rel="stylesheet" href="deposito.css">
+</head>
+<body>
+    <header class="header">
+        <button type="button" class="clear" onclick="voltarParaHome()">
+            Voltar
+        </button>
+    </header>
+    <main class="centralize">
+        <div class="container">
+            <h2>Realizar Depósito</h2>
+            <form id="deposit-form" class="form-container">
+                <div class="form-field">
+                    <label for="valor">Valor</label>
+                    <input type="number" id="valor" placeholder="Insira o valor do depósito" required>
+                </div>
+                <div class="form-field">
+                    <label for="descricao">Descrição</label>
+                    <input type="text" id="descricao" placeholder="Descrição do depósito" required>
+                </div>
+                <button type="button" id="realizar-deposito">Realizar Depósito</button>
+            </form>
+            <div id="message"></div> 
+        </div>
+    </main>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+    <script src="../../firebase-init.js"></script>
+    <script src="deposito.js"></script>
+</body>
+</html>

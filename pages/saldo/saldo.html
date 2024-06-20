@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saldo - Sistema de Banco Online</title>
+    <link rel="stylesheet" href="saldo.css">
+</head>
+<body>
+    <header class="header">
+        <button type="button" class="clear" onclick="voltarParaHome()">
+            Voltar
+        </button>
+    </header>
+    <main class="centralize">
+        <div class="container">
+            <h2>Saldo da Conta</h2>
+            <div id="saldo-container">
+                <h3 id="saldo-message"></h3>
+                <h3>Saldo Atual: <span id="saldo"></span></h3>
+            </div>
+        </div>
+    </main>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+    <script src="../../firebase-init.js"></script>
+    <script src="saldo.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffeb3b;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #fbc02d;
+    display: flex;
+    justify-content: flex-end;
+}
+
+button.clear {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #000;
+}
+
+button.clear:hover {
+    text-decoration: underline;
+}
+
+main.centralize {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+form#pagamento-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-field {
+    margin-bottom: 15px;
+}
+
+.form-field div {
+    margin-bottom: 5px;
+}
+
+.form-field label {
+    font-weight: bold;
+    color: #000;
+}
+
+.form-field input,
+.form-field select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button.solid {
+    background-color: #fbc02d;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button.solid:hover {
+    background-color: #f9a825;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+
+#message.success {
+    color: green;
+}
+
+#message.error {
+    color: red;
+}

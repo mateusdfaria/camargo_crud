@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extrato - Sistema de Banco Online</title>
+    <link rel="stylesheet" href="extrato.css">
+</head>
+<body>
+    <header>
+        <button type="button" class="clear" onclick="voltarParaHome()">
+            Voltar
+        </button>
+    </header>
+    <main class="centralize">
+        <div class="container">
+            <h2>Extrato de Transações</h2>
+            <table id="transacoes-table" class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Data</th>
+                        <th>Moeda</th>
+                        <th>Valor</th>
+                        <th>Tipo de Transação</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- As transações serão inseridas aqui -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+    <script src="../../firebase-init.js"></script> <!-- Certifique-se de incluir antes dos scripts que dependem do Firebase -->
+    <script src="extrato.js"></script>
+</body>
+</html>
